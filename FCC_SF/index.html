@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="heading">
+		<h1 id=title>Developers Survey Form !!!</h1>
+		<p id="description">We love to know about which technology and tools software engineers are using world wide! Each and every Developers opinions are very precious to us!</p>
+	</div>
+	<div id="main">
+		<form id="survey-form">
+			<div id="input-fields">
+				<label id="name-label"><b>Name:</b></label>
+				<input id="name" type="text" class="form" name="name" placeholder="First Name" required><br><br>
+				<label id="email-label"><b>Email:</b></label>
+				<input id="email" type="Email" name="email" class="form" placeholder="abc@gmail.com" required><br><br>
+				<label id="age-label"><b>Age:</b></label>
+				<input id="number" type="number" name="number" class="form" placeholder="18+" min="18" max="60"><br><br>
+			</div>
+			<div id="dropdown-div">
+				<label id="dropdown-label"><strong>Programming language you are expert at:</strong></label><br>
+				<select id="dropdown" class="form" name="code-lang">
+					<option value="c">C (Programming Language)</option>
+					<option value="python">Python</option>
+					<option value="c#">C#</option>
+					<option value="php">PHP</option>
+					<option value="javascript">JavaScript</option>
+					<option value="go">Go (Programming Language)</option>
+					<option value="ruby">Ruby on Rails</option>
+					<option value="cpp">C++</option>
+					<option value="java">Java</option>
+				</select><br><br>
+			</div>
+			<div id="button-area">
+			
+				<label id="job-label">Employment Status:</label><br>
+				<input type="radio" name="gender" class="radio-inline" value="employed" checked>
+				Full-time job holder.(Employed)<br>
+				<input type="radio" name="gender" class="radio-inline" value="Freelancer">
+				Part-time job holder.(Freelancer)<br>
+				<input type="radio" name="gender" class="radio-inline" value="Applier">
+				Looking for a job.(Applier)<br>
+				<input type="radio" name="gender" class="radio-inline" value="Unemployed">
+				I am a student.(Unemployed)<br>
+			</div><br>
+			<div id="button-area">
+				<label id="os-label">Operating System Experience:</label><br>
+				<input type="checkbox" name="os1" value="windows">
+				I am experienced with Windows-OS<br>
+				<input type="checkbox" name="os2" value="linux">
+				I am experienced with Linux-OS<br>
+				<input type="checkbox" name="os3" value="mac">
+				I am experienced with Mac-OS<br>
+			</div><br>
+			<div id="dropdown">
+				<label id="dropdown-label"><strong>Programming language you wanna be expert: </strong><br>
+				<select id="dropdown" class="form" name="code-lang">
+					<option value="c">C (Programming Language)</option>
+					<option value="python">Python</option>
+					<option value="c#">C#</option>
+					<option value="php">PHP</option>
+					<option value="javascript">JavaScript</option>
+					<option value="go">Go (Programming Language)</option>
+					<option value="ruby">Ruby on Rails</option>
+					<option value="cpp">C++</option>
+					<option value="java">Java</option>
+				</select>
+			</div><br>
+			<div id="button-area">
+				<label id="os-label"><b>Latest technology experience:</b></label><br>
+				<input type="checkbox" name="flutter" value="">Flutter UI<br>
+				<input type="checkbox" name="node" value="">Node JS<br>
+				<input type="checkbox" name="tensor" value="">TensorFlow<br>
+				<input type="checkbox" name="github" value="">Github<br>
+				<input type="checkbox" name="devops" value="">Dev-Ops<br>
+			</div><br>
+			<div id="ending">
+				<label id="end-label">Do you have any suggestion about this survey?</label><br>
+				<textarea id="comments" class="form" placeholder="Write A Review On this Form..."></textarea><br><br>
+				<input id="submit" type="submit"  class="form">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
